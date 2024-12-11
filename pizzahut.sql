@@ -1,0 +1,11 @@
+CREATE DATABASE IF NOT EXISTS pizzahut;
+USE pizzahut;
+
+CREATE TABLE IF NOT EXISTS orders(
+  order_id INT NOT NULL,
+  order_date DATE NOT NULL,
+  order_time TIME NOT NULL
+);
+
+ALTER TABLE orders
+MODIFY COLUMN order_id INT NOT NULL PRIMARY KEY;
